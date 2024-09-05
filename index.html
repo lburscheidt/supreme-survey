@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="src/colors.css">
+    <link rel="stylesheet" href="src/comeau-reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unseen University Libraries Annual User Survey</title>
+</head>
+
+<body>
+    <h1 id="title">Library Survey Form</h1>
+    <p id="description">This is the annual library user survey.</p>
+    <form id="survey-form">
+        <label id="name-label">First Name: </label>
+        <input id="name" type="text" required placeholder="Max Mustermann"></input>
+        <label id="email-label">Email: </label>
+        <input id="email" type="email" required placeholder="abc@bluesky.com"></input>
+        <label id="number-label">Number: </label>
+        <input id="number" type="number" min="6" max="12" placeholder="50"></input>
+        <label> How do you use the library mostly?</label> <select id="dropdown">
+            <option>(select one)</option>
+            <option>On campus</option>
+            <option>Remotely</option>
+        </select>
+        <input type="radio" name="usergroup" value="student"></input><label>Student</label>
+        <input type="radio" name="usergroup" value="staff"></input><label>Staff</label>
+        <label>At home</label> <input type="checkbox" value="location">
+        <label>On Campus</label><input type="checkbox" value="location">
+        <textarea></textarea>
+        <input type="submit" id="submit"></input>
+    </form>
+</body>
+
+</html>
