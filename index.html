@@ -4,34 +4,59 @@
 <head>
     <link rel="stylesheet" href="src/colors.css">
     <link rel="stylesheet" href="src/comeau-reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unseen University Libraries Annual User Survey</title>
 </head>
 
 <body>
-    <h1 id="title">Library Survey Form</h1>
-    <p id="description">This is the annual library user survey.</p>
-    <form id="survey-form">
-        <label id="name-label">First Name: </label>
-        <input id="name" type="text" required placeholder="Max Mustermann"></input>
-        <label id="email-label">Email: </label>
-        <input id="email" type="email" required placeholder="abc@bluesky.com"></input>
-        <label id="number-label">Number: </label>
-        <input id="number" type="number" min="6" max="12" placeholder="50"></input>
-        <label> How do you use the library mostly?</label> <select id="dropdown">
-            <option>(select one)</option>
-            <option>On campus</option>
-            <option>Remotely</option>
-        </select>
-        <input type="radio" name="usergroup" value="student"></input><label>Student</label>
-        <input type="radio" name="usergroup" value="staff"></input><label>Staff</label>
-        <label>At home</label> <input type="checkbox" value="location">
-        <label>On Campus</label><input type="checkbox" value="location">
-        <textarea></textarea>
-        <input type="submit" id="submit"></input>
-    </form>
+    <header></header>
+    <main>
+        <h1 id="title">Library Survey Form</h1>
+        <p id="description">Thank you very much for taking part in our annual library user survey. Tell us what we're
+            already doing well and what we could do better!</p>
+        <form id="survey-form">
+            <fieldset>
+                <legend>Your personal details</legend>
+                <label for="name" id="name-label">Name: </label>
+                <input id="name" type="text" required placeholder="Joe Bloggs">
+                <label for="email" id="email-label">Email: </label>
+                <input id="email" type="email" required placeholder="joebloggs@icloud.com">
+                <p>What's your user group?</p>
+                <label for="student">Student</label> <input type="checkbox" value="student" id="student">
+                <label for="staff">Staff</label><input type="checkbox" value="staff" id="staff">
+                <label for="external">External</label><input type="checkbox" value="external" id="external">
+            </fieldset>
+            <fieldset>
+                <legend>Your library use</legend>
+                <label for="number" id="number-label">On a scale from 1 to 10, where 1 is "Not at all likely" and 10 is
+                    "Very
+                    likely", how likely
+                    is it that you would recommend our library to your friends and/or colleagues?</label>
+                <input id="number" type="number" min="1" max="10" placeholder="10">
+                <label for="dropdown"> How do you use the library mostly?</label> <select id="dropdown">
+                    <option>(select one)</option>
+                    <option>On campus</option>
+                    <option>Remotely</option>
+                </select>
+                <p>How often do you use the library?</p>
+                <input type="radio" name="usage"><label>At least once a day</label>
+                <input type="radio" name="usage"><label>At least once a week</label>
+                <input type="radio" name="usage"><label>At least once every two weeks</label>
+                <input type="radio" name="usage"><label>At least once every month</label>
+                <input type="radio" name="usage"><label>Less than once every month</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Further comments</legend>
+                <p>If there is anything else you'd like to let us know, please leave your comments here:</p>
+                <textarea></textarea>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit form">
+        </form>
+    </main>
+    <footer></footer>
 </body>
 
 </html>
