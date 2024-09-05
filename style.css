@@ -6,19 +6,87 @@ body {
     display: flex;
     height: 100vh;
     width: 100vw;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue-warm-10v);
 }
 
 main {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 50%;
-
-    background-color: var(--red-10v);
+    height: 100%;
+    background-color: var(--blue-warm-40v);
 }
+
+
 
 fieldset,
 #submit {
-    margin-top: 20px;
+    margin: 10px;
+}
+
+fieldset {
+    border: 2px solid var(--blue-warm-60v);
+    border-radius: 10px;
+}
+
+.survey-section {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+legend {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+#description {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header {
+    height: 120px;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    background-color: var(--blue-warm-10v);
+}
+
+header>img {
+    padding-top: 20px;
+    object-fit: contain;
+}
+
+input,
+select,
+textarea,
+input[type="radio"],
+input[type="checkbox"] {
+    background-color: var(--blue-warm-10v);
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.survey-section>ul>li {
+    margin-top: 10px;
+
 }
