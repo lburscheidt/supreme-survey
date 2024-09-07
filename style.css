@@ -1,92 +1,98 @@
 :root {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --blue-warm-5v: #edf5ff;
+  --blue-warm-10v: #d4e5ff;
+  --blue-warm-20v: #adcdff;
+  --blue-warm-30v: #81aefc;
+  --blue-warm-40v: #5994f6;
+  --blue-warm-50v: #2672de;
+  --blue-warm-60v: #0050d8;
+  --blue-warm-70v: #1a4480;
+  --blue-warm-80v: #162e51;
 }
 
 body {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--blue-warm-10v);
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--blue-warm-10v);
 }
 
 main {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 50%;
-    height: 100%;
-    background-color: var(--blue-warm-40v);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
+  height: 100%;
+  background-color: var(--blue-warm-40v);
 }
-
-
 
 fieldset,
 #submit {
-    margin: 10px;
+  margin: 10px;
 }
 
 fieldset {
-    border: 2px solid var(--blue-warm-60v);
-    border-radius: 10px;
+  border: 2px solid var(--blue-warm-60v);
+  border-radius: 10px;
 }
 
 .survey-section {
-    margin-left: 10px;
-    margin-bottom: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 legend {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 p {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #description {
-    margin-left: 10px;
-    margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 header {
-    height: 120px;
-    justify-content: center;
-    width: 100%;
-    display: flex;
-    background-color: var(--blue-warm-10v);
+  height: 120px;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  background-color: var(--blue-warm-10v);
 }
 
-header>img {
-    padding-top: 20px;
-    object-fit: contain;
+header > img {
+  padding-top: 20px;
+  object-fit: contain;
 }
 
 input,
 select,
 textarea,
-input[type="radio"],
-input[type="checkbox"] {
-    background-color: var(--blue-warm-10v);
-    border: none;
-    box-shadow: none;
-    border-radius: 5px;
+input[type='radio'],
+input[type='checkbox'] {
+  background-color: var(--blue-warm-10v);
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
 }
 
 textarea {
-    width: 90%;
-    height: 100px;
+  width: 90%;
+  height: 100px;
 }
 
-input[type="submit"] {
-    border: none;
-    padding: 15px;
-    border-radius: 10px;
+input[type='submit'] {
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
 }
 
-.survey-section>ul>li {
-    margin-top: 10px;
-
+.survey-section > ul > li {
+  margin-top: 10px;
 }

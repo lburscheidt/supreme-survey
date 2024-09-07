@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="src/colors.css">
+ 
     <link rel="stylesheet" href="src/comeau-reset.css">
     <link rel="stylesheet" href="style.css">
 
@@ -25,22 +25,22 @@
                 </legend>
                 <div class="survey-section">
                     <ul>
-                        <li><label for="name" id="name-label">Name: </label>
-                            <input id="name" type="text" required placeholder="Joe Bloggs">
+                        <li><label for="name" id="name-label">Name: <input id="name" type="text" required placeholder="Joe Bloggs"></label>
+                            
                         </li>
-                        <li><label for="email" id="email-label">Email: </label>
-                            <input id="email" type="email" required placeholder="joebloggs@icloud.com">
+                        <li><label for="email" id="email-label">Email: <input id="email" type="email" required placeholder="joebloggs@icloud.com"></label>
+                            
                         </li>
                         <li>
                             <p>What's your user group?</p>
                             <ul>
-                                <li><input type="checkbox" value="student" id="student"><label
-                                        for="student">Student</label>
+                                <li><label
+                                        for="student"><input type="checkbox" value="student" id="student"> Student</label>
                                 </li>
-                                <li><input type="checkbox" value="staff" id="staff"><label for="staff">Staff</label>
+                                <li><label for="staff"><input type="checkbox" value="staff" id="staff"> Staff</label>
                                 </li>
-                                <li> <input type="checkbox" value="external" id="external"><label
-                                        for="external">External</label>
+                                <li> <label
+                                        for="external"><input type="checkbox" value="external" id="external"> External</label>
                                 </li>
                         </li>
                     </ul>
@@ -54,26 +54,28 @@
                 <div class="survey-section">
                     <ul>
                         <li><label for="number" id="number-label">On a scale from 1 to 10, how likely
-                                is it that you would recommend our library to your friends and/or colleagues?</label>
-                            <input id="number" type="number" min="1" max="10" placeholder="10">
+                                is it that you would recommend our library to your friends and/or colleagues? <input id="number" type="number" min="1" max="10" placeholder="10"></label>
+                            
                         </li>
-                        <li><label for="dropdown"> How do you use the library mostly?</label> <select id="dropdown">
+                        <li><label for="dropdown"> How do you use the library mostly?
+                            <select id="dropdown"></select>
                                 <option>(select one)</option>
                                 <option>On campus</option>
                                 <option>Remotely</option>
-                            </select></li>
+                            </select>
+                        </label> </li>
                         <li>
                             <p>How often do you use the library?</p>
                             <ul>
-                                <li><input type="radio" name="usage" value="daily"><label>At least once a day</label>
+                                <li><label><input type="radio" name="usage" value="daily"> At least once a day</label>
                                 </li>
-                                <li> <input type="radio" name="usage" value="weekly"><label>At least once a week</label>
+                                <li> <label><input type="radio" name="usage" value="weekly"> At least once a week</label>
                                 </li>
-                                <li><input type="radio" name="usage" value="fortnightly"><label>At least once every two
+                                <li><label><input type="radio" name="usage" value="fortnightly"> At least once every two
                                         weeks</label></li>
-                                <li><input type="radio" name="usage" value="monthly"><label>At least once every
+                                <li><label> <input type="radio" name="usage" value="monthly"> At least once every
                                         month</label></li>
-                                <li><input type="radio" name="usage" value="less-than-monthly"><label>Less than once
+                                <li><label><input type="radio" name="usage" value="less-than-monthly"> Less than once
                                         every month</label></li>
                             </ul>
                         </li>
